@@ -242,6 +242,10 @@ body {
 }
 
 @media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
     .wrapper {
         width: 90%;
     }
@@ -252,5 +256,9 @@ body {
 
     .login {
         width: 100%;
+    }
+
+    .groupbox-1 {
+        border: 1px solid transparent;
     }
 }
