@@ -24,6 +24,7 @@ body {
     justify-content: start;
     width: 60%;
     height: 100vh;
+    
 }
 
 .phone {
@@ -42,8 +43,9 @@ body {
     align-items: center;   
     justify-content: space-around;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     min-height: 34rem;   
+    padding-top: 23px;
 }
 
 .groupbox-1 {
@@ -82,7 +84,7 @@ body {
 }
 
 .groupbox-1:nth-child(1) {
-    min-height: 19rem;
+    min-height: 18rem;
 }
 
 .instagram-logo {
@@ -115,11 +117,15 @@ body {
     font-weight: bold;
 }
 
+#cadastrar {
+    margin-top: 1.3rem;
+}
+
 .alternativa {
     display: flex;
     width: 100%;
     height: 40px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .linha1 {   
@@ -146,4 +152,105 @@ body {
     font-size: 12.5px;
     font-weight: bold;   
     color: rgb(180, 180, 180);
+}
+
+.facebook {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.entrar-facebook {
+    display: flex;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 149, 246);
+    align-items: center;
+    padding-top: 1.3rem;
+}
+
+.entrar-facebook img {
+    padding-top: 5px;
+    margin-right: 5px;
+}
+
+#loginface {
+    padding-top: 5px;
+}
+
+#loginface span a {   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(56, 81, 133);
+    font-size: 13.5px;
+    font-weight: bold;      
+}
+
+.forgot-pass {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    padding-top: 2rem;
+    
+    
+    color: rgb(100, 100, 100);
+}
+
+.groupbox-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1.3rem;
+    padding-bottom: 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+
+.groupbox-2 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(38, 38, 38)   ;
+}
+
+.app-download {   
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url("../img/googleplay-button.png");
+}
+
+.app-download:nth-child(2) {
+    background-image: url("../img/apple-button.png");
+}
+
+/** media queries - aqui trata resoluções para outros dispositivos **/
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
 }
